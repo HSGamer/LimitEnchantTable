@@ -1,0 +1,6 @@
+name: LimitEnchantTable
+version: '${project.version}'
+main: me.hsgamer.limitenchanttable.LimitEnchantTable
+api-version: 1.17
+authors: [ HSGamer ]
+description: Limit the uses of the enchanting table
