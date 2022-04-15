@@ -9,6 +9,7 @@ import me.hsgamer.limitenchanttable.config.MessageConfig;
 import me.hsgamer.limitenchanttable.listener.BreakListener;
 import me.hsgamer.limitenchanttable.listener.EnchantListener;
 import me.hsgamer.limitenchanttable.listener.PlaceListener;
+import me.hsgamer.limitenchanttable.listener.ResultListener;
 import org.bukkit.NamespacedKey;
 import org.bukkit.persistence.PersistentDataType;
 
@@ -35,6 +36,7 @@ public final class LimitEnchantTable extends BasePlugin {
         registerListener(new BreakListener(this));
         registerListener(new EnchantListener(this));
         registerListener(new PlaceListener(this));
+        registerListener(new ResultListener(this));
 
         registerCommand(new GiveCommand(this));
     }
